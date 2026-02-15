@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Beats | Laurence Mendoza</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway|Playfair+Display|Lato"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="IMAGES/logo.png" />
+
+    <style>
+      .container {
+        max-width: 900px;
+        margin: 80px auto;
+        padding: 0 20px;
+      }
+
+      h1.beats-title {
+        font-family: "Playfair Display", serif;
+        font-size: 26px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        text-align: center;
+      }
+
+      .music-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+      }
+
+      .track-row {
+        margin-bottom: 50px;
+        text-align: center;
+      }
+
+      .genre-divider {
+        font-family: "Lato", sans-serif;
+        font-size: 24px;
+        text-transform: uppercase;
+        color: #303030;
+        text-align: center;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+      }
+
+      .album-img {
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 10px;
+      }
+
+      .track-name {
+        font-family: "Playfair Display", serif;
+        font-size: 24px;
+        display: block;
+        color: #000;
+        margin-bottom: 5px;
+      }
+
+      .artist-name {
+        font-family: "Lato", sans-serif;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #4e0101;
+      }
+
+      audio {
+        width: 100%;
+        height: 30px;
+        margin-top: 15px;
+      }
+
+      .back-nav {
+        text-align: center;
+        margin-top: 80px;
+        font-size: 11px;
+        letter-spacing: 2px;
+      }
+
+      .back-nav a {
+        text-decoration: none;
+        color: #1a1a1a;
+        border-bottom: 1px solid #1a1a1a;
+      }
+
+      .center-content {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="header-banner">
+        <h1 class="story_title"><i>Designing My Creative Future</i></h1>
+        <p class="story_subtitle">
+          From Photoshop Experiments to Freelance Deadlines and IT Dreams
+        </p>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="blog.html">Blogs</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="aboutme.html">About Me</a>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="center-content" style="padding: 0">
+        <a href="aboutme.html" class="go-top-btn">
+          <i class="fa fa-arrow-left"></i>&nbsp;&nbsp; Go back to About
+        </a>
+        <br /><br />
+      </div>
+      <br />
+      <h1 class="beats-title">Album</h1>
+      <div
+        class="gallery-nav-bar"
+        style="
+          display: flex;
+          justify-content: center;
+          gap: 15px;
+          margin-bottom: 40px;
+        "
+      >
+        <a href="#r&b" class="filter-btn">R&B</a>
+        <a href="#opm" class="filter-btn">OPM</a>
+      </div>
+      <br /><br />
+      <hr />
+
+      <br /><br />
+      <div class="genre-divider" id="r&b">R & B</div>
+      <div class="music-grid">
+        <div class="track-row">
+          <a
+            href="/Beats/R&B/Ballads 1.jpg"
+            target="newtab"
+            title="Joji 'Ballads 1' Album Picture"
+          >
+            <img src="/Beats/R&B/Ballads 1.jpg" class="album-img" />
+          </a>
+          <div class="track-details">
+            <div class="track-info-group">
+              <span class="track-name">Attention</span>
+              <span class="artist-name">Joji</span>
+            </div>
+            <audio controls>
+              <source src="/Beats/R&B/Joji - ATTENTION.mp3" type="audio/mpeg" />
+            </audio>
+          </div>
+        </div>
+
+        <div class="track-row">
+          <a
+            href="/Beats/R&B/Niki.png"
+            target="newtab"
+            title="Niki 'Nicole' Album Picture"
+          >
+            <img src="/Beats/R&B/Niki.png" class="album-img" />
+          </a>
+          <div class="track-details">
+            <div class="track-info-group">
+              <span class="track-name">Autumn</span>
+              <span class="artist-name">Niki</span>
+            </div>
+            <audio controls>
+              <source
+                src="/Beats/R&B/NIKI - Autumn (Official Lyric Video).mp3"
+                type="audio/mpeg"
+              />
+            </audio>
+          </div>
+        </div>
+
+        <div class="track-row">
+          <a
+            href="/Beats/R&B/Joji_-_Sanctuary.png"
+            target="newtab"
+            title="Joji 'Sanctuary' Album Picture"
+          >
+            <img src="/Beats/R&B/Joji_-_Sanctuary.png" class="album-img" />
+          </a>
+          <div class="track-details">
+            <div class="track-info-group">
+              <span class="track-name">Sanctuary</span>
+              <span class="artist-name">Joji</span>
+            </div>
+            <audio controls>
+              <source src="/Beats/R&B/Sanctuary.mp3" type="audio/mpeg" />
+            </audio>
+          </div>
+        </div>
+
+        <div class="track-row">
+          <a
+            href="/Beats/R&B/starboy.jpg"
+            target="newtab"
+            title="The Weeknd 'Starboy' Album Picture"
+          >
+            <img src="/Beats/R&B/starboy.jpg" class="album-img" />
+          </a>
+          <div class="track-details">
+            <div class="track-info-group">
+              <span class="track-name">Reminder</span>
+              <span class="artist-name">The Weeknd</span>
+            </div>
+            <audio controls>
+              <source
+                src="/Beats/R&B/The Weeknd - Reminder (Official Video).mp3"
+                type="audio/mpeg"
+              />
+            </audio>
+          </div>
+        </div>
+
+        <div class="track-row">
+          <a
+            href="/Beats/R&B/Fetty-wap-again.jpg"
+            target="newtab"
+            title="Fetty Wap 'Again' Song"
+          >
+            <img src="/Beats/R&B/Fetty-wap-again.jpg" class="album-img" />
+          </a>
+          <div class="track-details">
+            <div class="track-info-group">
+              <span class="track-name">Again</span>
+              <span class="artist-name">Fetty Wap</span>
+            </div>
+            <audio controls>
+              <source
+                src="/Beats/R&B/Fetty Wap - Again [Audio Only].mp3"
+                type="audio/mpeg"
+              />
+            </audio>
+          </div>
+        </div>
+
+        <div class="track-row">
+          <a
+            href="/Beats/R&B/KissItBetter.jpg"
+            target="newtab"
+            title="Rihanna 'Anti' Album Photo"
+          >
+            <img src="/Beats/R&B/KissItBetter.jpg" class="album-img" />
+          </a>
+          <div class="track-details">
+            <div class="track-info-group">
+              <span class="track-name">Kiss It Better</span>
+              <span class="artist-name">Rihanna</span>
+            </div>
+            <audio controls>
+              <source src="/Beats/R&B/Kiss It Better.mp3" type="audio/mpeg" />
+            </audio>
+          </div>
+        </div>
+      </div>
+      <div class="center-content">
+        <a href="#top" class="go-top-btn">
+          <i class="fa fa-arrow-up"></i>&nbsp;&nbsp; Back to Top
+        </a>
+      </div>
+      <br /><br />
+      <hr />
+      <br /><br />
+      <div class="genre-divider" id="opm">OPM</div>
+      <div class="music-grid">
+        <div class="track-row">
+          <a
+            href="/Beats/OPM/Nandito Ako.jpg"
+            target="newtab"
+            title="Nandito ako by Ogie"
+          >
+            <img src="/Beats/OPM/Nandito Ako.jpg" class="album-img" />
+          </a>
+          <div class="track-details">
+            <div class="track-info-group">
+              <span class="track-name">Nandito Ako</span>
+              <span class="artist-name">Ogie Alcasid</span>
+            </div>
+            <audio controls>
+              <source
+                src="/Beats/OPM/Ogie Alcasid - Nandito Ako (Lyrics On Screen).mp3"
+                type="audio/mpeg"
+              />
+            </audio>
+          </div>
+        </div>
+
+        <div class="track-row">
+          <a
+            href="/Beats/OPM/Bumalik kana.jpg"
+            target="newtab"
+            title="Lola Amour - Raining in Manila"
+          >
+            <img src="/Beats/OPM/Bumalik kana.jpg" class="album-img" />
+          </a>
+          <div class="track-details">
+            <div class="track-info-group">
+              <span class="track-name">Bumalik Ka Na Sakin</span>
+              <span class="artist-name">Silent Sanctuary</span>
+            </div>
+            <audio controls>
+              <source
+                src="/Beats/OPM/Silent Sanctuary - Bumalik Ka Na Sakin (Official Lyric Video).mp3"
+                type="audio/mpeg"
+              />
+            </audio>
+          </div>
+        </div>
+
+        <div class="track-row">
+          <a
+            href="/Beats/OPM/Dito Sa'kin.png"
+            target="newtab"
+            title="Earl Agustin - Dito Sa'kin Cover"
+          >
+            <img src="/Beats/OPM/Dito Sa'kin.png" class="album-img" />
+          </a>
+          <div class="track-details">
+            <div class="track-info-group">
+              <span class="track-name">Dito Sa'kin</span>
+              <span class="artist-name">Earl Agustin</span>
+            </div>
+            <audio controls>
+              <source
+                src="/Beats/OPM/Dito Sa’kin - Earl Agustin (Official Lyric Video).mp3"
+                type="audio/mpeg"
+              />
+            </audio>
+          </div>
+        </div>
+        <div class="track-row">
+          <a
+            href="/Beats/OPM/Buko.png"
+            target="newtab"
+            title="Buko 'Love and Soul' Album Cover"
+          >
+            <img src="/Beats/OPM/Buko.png" class="album-img" />
+          </a>
+          <div class="track-details">
+            <div class="track-info-group">
+              <span class="track-name">Buko</span>
+              <span class="artist-name">Jireh Lim</span>
+            </div>
+            <audio controls>
+              <source
+                src="/Beats/OPM/Buko - Jireh Lim Lyrics.mp3"
+                type="audio/mpeg"
+              />
+            </audio>
+          </div>
+        </div>
+        <div class="track-row">
+          <a
+            href="/Beats/OPM/Unti-Unti.jpg"
+            target="newtab"
+            title="Unti-Unti Cover by Globe"
+          >
+            <img src="/Beats/OPM/Unti-Unti.jpg" class="album-img" />
+          </a>
+          <div class="track-details">
+            <div class="track-info-group">
+              <span class="track-name">Unti-Unti</span>
+              <span class="artist-name">Up Dharma Down</span>
+            </div>
+            <audio controls>
+              <source
+                src="/Beats/OPM/UDD-Unti-Unti Lyric Video (Original Song from Globe Studios Valentines Video 2017).mp3"
+                type="audio/mpeg"
+              />
+            </audio>
+          </div>
+        </div>
+        <div class="track-row">
+          <a
+            href="/Beats/OPM/Take All The Love.jpg"
+            target="newtab"
+            title="Arthur Nery Photo Cover"
+          >
+            <img src="/Beats/OPM/Take All The Love.jpg" class="album-img" />
+          </a>
+          <div class="track-details">
+            <div class="track-info-group">
+              <span class="track-name">Take All The Love</span>
+              <span class="artist-name">Arthur Nery</span>
+            </div>
+            <audio controls>
+              <source
+                src="/Beats/OPM/Arthur Nery - TAKE ALL THE LOVE.mp3"
+                type="audio/mpeg"
+              />
+            </audio>
+          </div>
+        </div>
+      </div>
+      <div class="center-content">
+        <a href="#top" class="go-top-btn">
+          <i class="fa fa-arrow-up"></i>&nbsp;&nbsp; Back to Top
+        </a>
+      </div>
+    </div>
+
+    <footer class="footer-custom">
+      <p style="font-size: 16px">Let's work together</p>
+      <div style="font-size: 24px; margin-bottom: 15px">
+        <i
+          class="fa-brands fa-facebook"
+          style="margin: 0 3px; cursor: pointer"
+        ></i>
+        <i
+          class="fa-brands fa-instagram"
+          style="margin: 0 3px; cursor: pointer"
+        ></i>
+        <i
+          class="fa-brands fa-tiktok"
+          style="margin: 0 3px; cursor: pointer"
+        ></i>
+        <i
+          class="fa-brands fa-behance"
+          style="margin: 0 3px; cursor: pointer"
+        ></i>
+      </div>
+      <p style="font-size: 14px">
+        Email:
+        <a href="mailto:mendozalaurence0818@gmail.com" class="content_link"
+          >mendozalaurence0818@gmail.com</a
+        >
+      </p>
+      <p style="font-size: 14px">© 2026 Laurence C. Mendoza</p>
+    </footer>
+  </body>
+</html>
