@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dream Places | Laurence Mendoza</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Playfair Display"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="IMAGES/logo.png" />
+    <style>
+      .dream-container {
+        max-width: 1200px;
+        margin: 80px auto;
+        padding: 0 20px;
+      }
+
+      h1.dream-title {
+        font-family: "Playfair Display", serif;
+        font-size: 26px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        text-align: center;
+      }
+
+      .collage-dream-container {
+        position: relative;
+        width: 1500px;
+        margin: 50px auto;
+      }
+
+      .collage {
+        width: 1200px;
+        height: 800px;
+        border-radius: 15px;
+        border: 1px solid #eee;
+      }
+
+      .places-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        margin-top: 60px;
+      }
+
+      .card {
+        border-bottom: 1px solid #f2f2f2;
+        padding-bottom: 20px;
+      }
+
+      .name {
+        font-family: "Playfair Display", serif;
+        font-size: 22px;
+        color: #000;
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      .explanation {
+        font-size: 14px;
+        color: #666;
+        line-height: 1.6;
+      }
+
+      .img {
+        width: 100%;
+        height: 170px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dream-container">
+      <div class="center-content" style="padding: 0">
+        <a href="aboutme.html" class="go-top-btn">
+          <i class="fa fa-arrow-left"></i>&nbsp;&nbsp; Go back to About
+        </a>
+        <br /><br />
+      </div>
+      <br />
+      <h1 class="dream-title">Dream Destinations</h1>
+      <p
+        class="box_subtitle"
+        style="text-align: center; font-size: 15px; margin-top: 5px"
+      >
+        The places of a lifetime.
+      </p>
+      <br />
+      <hr />
+      <br />
+
+      <div class="collage-dream-container">
+        <img
+          src="DreamPlaces/Collage.png"
+          usemap="#collage-map"
+          class="collage"
+          alt="Travel Collage"
+        />
+
+        <map name="collage-map">
+          <area
+            alt="Japan land of the JDM"
+            title="Japan land of the JDM"
+            href="#japan"
+            coords="0,0,300,800"
+            shape="rect"
+          />
+
+          <area
+            alt="Bicol the homeland of Mayon"
+            title="Bicol the homeland of my Grandmother"
+            href="#bicol"
+            coords="300,0,600,800"
+            shape="rect"
+          />
+
+          <area
+            alt="Abu Dhabi the best F1 Grand Prix Finale"
+            title="Abu Dhabi the best F1 Grand Prix Finale"
+            href="#abudhabi"
+            coords="600,0,900,800"
+            shape="rect"
+          />
+
+          <area
+            alt="London Liverpool Station"
+            title="London Liverpool Home to the bussiest Train Station in UK"
+            href="#london"
+            coords="900,0,1200,800"
+            shape="rect"
+          />
+        </map>
+      </div>
+      <br /><br /><br /><br />
+      <hr />
+      <br /><br /><br /><br />
+      <div class="places-grid">
+        <div class="card" id="japan">
+          <img
+            src="DreamPlaces/Japan.jpg"
+            alt="JDM Cars in Tokyo"
+            class="img"
+          />
+          <p class="name">Tokyo, Japan</p>
+          <p class="explanation">
+            To capture the JDM streets and the beauty of high-performance cars
+            in their natural habitat. I want to experience the car meet culture.
+          </p>
+        </div>
+        <div class="card" id="bicol">
+          <img
+            src="DreamPlaces/Bicol.jpg"
+            alt="Mayon Volcano"
+            class="img"
+          />
+          <p class="name">Bicol, Philippines</p>
+          <p class="explanation">
+            The homeland of my family. I want to see the perfect cone of Mt.
+            Mayon in person and connect with my roots. photography.
+          </p>
+        </div>
+
+        <div class="card" id="abudhabi">
+          <img
+            src="DreamPlaces/YasIsland.jpg"
+            alt="Hollywood Sign"
+            class="img"
+          />
+          <p class="name">Yas Island, Abu Dhabi</p>
+          <p class="explanation">
+            The traditional closing race of the Formula 1 seasons, the track
+            carries an energy of finality and high stakes so for me watching it
+            will be the peak of my life.
+          </p>
+        </div>
+
+        <div class="card" id="london">
+          <img
+            src="DreamPlaces/London.jpg"
+            alt="Mayon Volcano"
+            class="img"
+          />
+          <p class="name">London Liverpool, United Kingdom</p>
+          <p class="explanation">
+            London Liverpool contains the most busy train station on all of UK.
+            As a train lover the high speed trains and old trains really gets me
+            going and happy.
+          </p>
+        </div>
+      </div>
+      <br /><br /><br />
+      <div class="center-content">
+        <a href="#top" class="go-top-btn">
+          <i class="fa fa-arrow-up"></i>&nbsp;&nbsp; Back to Top
+        </a>
+      </div>
+    </div>
+
+    <footer class="footer-custom">
+      <p style="font-size: 16px">Let's work together</p>
+      <div style="font-size: 24px; margin-bottom: 15px">
+        <i
+          class="fa-brands fa-facebook"
+          style="margin: 0 3px; cursor: pointer"
+        ></i>
+        <i
+          class="fa-brands fa-instagram"
+          style="margin: 0 3px; cursor: pointer"
+        ></i>
+        <i
+          class="fa-brands fa-tiktok"
+          style="margin: 0 3px; cursor: pointer"
+        ></i>
+        <i
+          class="fa-brands fa-behance"
+          style="margin: 0 3px; cursor: pointer"
+        ></i>
+      </div>
+      <p style="font-size: 14px">
+        Email:
+        <a href="mailto:mendozalaurence0818@gmail.com" class="content_link"
+          >mendozalaurence0818@gmail.com</a
+        >
+      </p>
+      <p style="font-size: 14px">© 2026 Laurence C. Mendoza</p>
+    </footer>
+  </body>
+</html>

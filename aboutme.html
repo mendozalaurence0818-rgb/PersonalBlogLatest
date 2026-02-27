@@ -21,7 +21,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/png" href="IMAGES/logo.png">
+    <link rel="icon" type="image/png" href="IMAGES/logo.png" />
     <style>
       .about-container {
         max-width: 750px;
@@ -42,7 +42,7 @@
         padding: 40px;
         border-radius: 20px;
         border: 1px solid #e9e9e9;
-        background-image: url('IMAGES/background-about.png');
+        background-image: url("IMAGES/background-about.png");
       }
 
       .card-orientation {
@@ -61,17 +61,15 @@
       .beats-btn {
         text-decoration: none;
         color: #4e0101;
-        border: 1px solid #4e0101;
-        border-radius: 50%;
-        padding: 12px 25px;
-        border-radius: 30px;
-        font-weight: bold;
+        border-bottom: 2px solid transparent;
+        padding: 10px 15px;
         display: inline-block;
       }
 
       .beats-btn:hover {
-        background-color: #4e0101;
-        color: #fff;
+        border-bottom: 2px solid #4e0101;
+        color: #4e0101;
+        transition-duration: 0.3s;
       }
     </style>
   </head>
@@ -102,12 +100,27 @@
         >
           Learn more about my lifestyle!
         </p>
+        <br />
+        <div
+          class="gallery-nav-bar"
+          style="
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 40px;
+          "
+        >
+          <a href="#beats" class="filter-btn">Beats</a>
+          <a href="#movies" class="filter-btn">Movies</a>
+          <a href="#series" class="filter-btn">TV Series</a>
+          <a href="#dream" class="filter-btn">Dream Places</a>
+          <a href="#bucket" class="filter-btn">Bucket List</a>
+        </div>
       </div>
-      <br /><br />
       <hr />
       <br /><br />
 
-      <h2 class="aboutme-title">My Beats</h2>
+      <h2 class="aboutme-title" id="beats">My Beats</h2>
       <p class="box_subtitle" style="text-align: center; font-size: 15px">
         Explore my taste in music
       </p>
@@ -131,14 +144,188 @@
               A chill sprinkled with a little heavy playlist
             </h2>
             <p style="color: #666; font-style: italic; line-height: 1.5">
-              Music that keeps me focused daily or while <br> editing.
+              Music that keeps me focused daily or while <br />
+              editing.
             </p>
 
-            <a href="beats.html" class="beats-btn">
-              <i class="fa fa-music"></i>&nbsp; Open My Beats Album
+            <a href="beats.html" class="beats-btn"
+              >Open My Beats Album &nbsp; →
             </a>
           </div>
         </div>
+      </div>
+      <br /><br /><br /><br />
+      <hr />
+      <br /><br />
+
+      <h2 class="aboutme-title" id="movies">My Film Movies</h2>
+      <p class="box_subtitle" style="text-align: center; font-size: 15px">
+        Cinematic masterpieces and favorite scenes that inspire me
+      </p>
+      <br />
+
+      <div class="card">
+        <div class="card-orientation">
+          <div class="card-image">
+            <img src="IMAGES/gif/reel.gif" alt="Film Reel GIF" />
+          </div>
+
+          <div class="card-text">
+            <h2
+              style="
+                font-family: &quot;Playfair Display&quot;, serif;
+                font-size: 28px;
+                color: #1a1a1a;
+                margin-top: 10px;
+              "
+            >
+              Movies that stuck with me
+            </h2>
+            <p style="color: #666; font-style: italic; line-height: 1.5">
+              A lineup of movies from childhood to today that really showed
+              potential
+            </p>
+
+            <a href="movies.html" class="beats-btn"
+              >Explore My Movies &nbsp; →
+            </a>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top: 50px; text-align: center">
+        <a href="#top" class="go-top-btn">
+          <i class="fa fa-arrow-up"></i> Back to Top
+        </a>
+      </div>
+
+      <br /><br /><br /><br />
+      <hr />
+      <br /><br />
+
+      <h2 class="aboutme-title" id="series">My TV Shows</h2>
+      <p class="box_subtitle" style="text-align: center; font-size: 15px">
+        Binge-worthy series and late-night favorites
+      </p>
+      <br />
+
+      <div class="card">
+        <div class="card-orientation">
+          <div class="card-image">
+            <img src="IMAGES/gif/tv.gif" alt="TV Show GIF" />
+          </div>
+
+          <div class="card-text">
+            <h2
+              style="
+                font-family: &quot;Playfair Display&quot;, serif;
+                font-size: 28px;
+                color: #1a1a1a;
+                margin-top: 10px;
+              "
+            >
+              A Midnight Worthy Shows
+            </h2>
+            <p style="color: #666; font-style: italic; line-height: 1.5">
+              From Laughing, drama plots to midnight mystery <br />
+              horror moments.
+            </p>
+
+            <a href="shows.html" class="beats-btn"
+              >View My TV Shows List &nbsp; →
+            </a>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top: 50px; text-align: center">
+        <a href="#top" class="go-top-btn">
+          <i class="fa fa-arrow-up"></i> Back to Top
+        </a>
+      </div>
+
+      <br /><br /><br /><br />
+      <hr />
+      <br /><br />
+
+      <h2 class="aboutme-title" id="dream">Dream Places To Visit</h2>
+      <p class="box_subtitle" style="text-align: center; font-size: 15px">
+        See the places that'll probably give me peace
+      </p>
+      <br />
+
+      <div class="card">
+        <div class="card-orientation">
+          <div class="card-image">
+            <img src="IMAGES/gif/dream.gif" alt="TV Show GIF" />
+          </div>
+
+          <div class="card-text">
+            <h2
+              style="
+                font-family: &quot;Playfair Display&quot;, serif;
+                font-size: 28px;
+                color: #1a1a1a;
+                margin-top: 10px;
+              "
+            >
+              The dream places of a kid
+            </h2>
+            <p style="color: #666; font-style: italic; line-height: 1.5">
+              From visiting the land of JDM, to the birthplace of Happiness.
+            </p>
+
+            <a href="dream.html" class="beats-btn"
+              >View My TV Shows List &nbsp; →
+            </a>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top: 50px; text-align: center">
+        <a href="#top" class="go-top-btn">
+          <i class="fa fa-arrow-up"></i> Back to Top
+        </a>
+      </div>
+
+      <br /><br /><br /><br />
+      <hr />
+      <br /><br />
+
+      <h2 class="aboutme-title" id="bucket">Bucket List</h2>
+      <p class="box_subtitle" style="text-align: center; font-size: 15px">
+        Some of my most wanted Bucket List
+      </p>
+      <br />
+
+      <div class="card">
+        <div class="card-orientation">
+          <div class="card-image">
+            <img src="IMAGES/gif/bucketlist.gif" alt="TV Show GIF" />
+          </div>
+
+          <div class="card-text">
+            <h2
+              style="
+                font-family: &quot;Playfair Display&quot;, serif;
+                font-size: 28px;
+                color: #1a1a1a;
+                margin-top: 10px;
+              "
+            >
+              The dream of a kid
+            </h2>
+            <p style="color: #666; font-style: italic; line-height: 1.5">
+              Know me more about knowing what I want.
+            </p>
+
+            <a href="bucketlist.html" class="beats-btn"
+              >Visit my Bucket List &nbsp; →
+            </a>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top: 50px; text-align: center">
+        <a href="#top" class="go-top-btn">
+          <i class="fa fa-arrow-up"></i> Back to Top
+        </a>
       </div>
     </div>
 

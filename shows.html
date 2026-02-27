@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Film Movies | Laurence Mendoza</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway|Playfair+Display|Lato"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="IMAGES/logo.png" />
+
+    <style>
+      .shows-container {
+        max-width: 1100px;
+        margin: 80px auto;
+        padding: 0 20px;
+      }
+
+      .beats-title {
+        font-family: "Playfair Display", serif;
+        font-size: 26px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        text-align: center;
+      }
+
+      .genre-divider {
+        font-family: "Lato", sans-serif;
+        font-size: 24px;
+        text-transform: uppercase;
+        color: #303030;
+        text-align: center;
+        margin: 40px 0 20px;
+      }
+
+      .shows-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+      }
+
+      .track-row {
+        margin-bottom: 50px;
+        padding: 15px;
+      }
+
+      .shows-img {
+        width: 100%;
+        aspect-ratio: 2/3;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 5px;
+      }
+
+      .shows-name {
+        font-family: "Playfair Display", serif;
+        font-size: 22px;
+        display: block;
+        color: #000;
+        margin-bottom: 5px;
+        text-align: center;
+      }
+
+      .artist-name {
+        font-family: "Lato", sans-serif;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #4e0101;
+        margin-bottom: 10px;
+        display: block;
+        text-align: center;
+      }
+
+      .synopsis {
+        font-size: 13px;
+        color: #666;
+        line-height: 1.5;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        height: 60px;
+        text-align: center;
+        overflow: hidden;
+      }
+
+      .video-clip {
+        width: 100%;
+        height: 150px;
+        border-radius: 6px;
+        margin-top: 15px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="shows-container">
+      <div class="center-content" style="padding: 0">
+        <a href="aboutme.html" class="go-top-btn">
+          <i class="fa fa-arrow-left"></i>&nbsp;&nbsp; Go back to About
+        </a>
+        <br /><br />
+      </div>
+      <br />
+      <h1 class="beats-title">My Film Movies</h1>
+
+      <p
+        class="box_subtitle"
+        style="text-align: center; font-size: 15px; margin-top: 5px"
+      >
+        Explore the song that gets me thru the day.
+      </p>
+      <br />
+      <div
+        class="gallery-nav-bar"
+        style="
+          display: flex;
+          justify-content: center;
+          gap: 15px;
+          margin-bottom: 40px;
+        "
+      >
+        <a href="#sitcom" class="filter-btn">SITCOM</a>
+        <a href="#mystery" class="filter-btn">MYSTERY</a>
+      </div>
+      <br />
+      <hr />
+
+      <div class="genre-divider" id="sitcom">Sitcom</div>
+      <br />
+      <div class="shows-grid">
+        <div class="track-row">
+          <a href="TvShow/youngsheldon.jpg" target="newtab">
+            <img
+              src="TvShow/youngsheldon.jpg"
+              title="Young Sheldon Series Poster"
+              class="shows-img"
+          /></a>
+          <div class="track-details">
+            <p class="shows-name">Young Sheldon</p>
+            <p class="artist-name">Dir. Chuck Lorre | Iain Armitage</p>
+            <p class="synopsis">
+              The series is set from the late 1980s to the mid-1990s and centers
+              on the childhood of Sheldon Cooper, a gifted young prodigy growing
+              up with his family in Medford, Texas.
+            </p>
+            <iframe
+              class="video-clip"
+              width="1905"
+              height="790"
+              src="https://www.youtube.com/embed/IbzXbZVQvl4"
+              title="Cooper Family Moments We’ll Never Forget | Young Sheldon Compilation"
+              frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="track-row">
+          <a href="TvShow/modernfamily.jpg" target="newtab">
+            <img
+              src="TvShow/modernfamily.jpg"
+              title="Modern Family Series Poster"
+              class="shows-img"
+          /></a>
+          <div class="track-details">
+            <p class="shows-name">Modern Family</p>
+            <p class="artist-name">Dir. Christopher Lloyd | Ty Burrell</p>
+            <p class="synopsis">
+              Revolves around three different types of families living in
+              suburban Los Angeles, who are interrelated, Jay Pritchett, and his
+              two children, Claire and Mitchell.
+            </p>
+            <iframe
+              class="video-clip"
+              width="1905"
+              height="790"
+              src="https://www.youtube.com/embed/ELutIbHk2UA"
+              title="Modern Family | Must-See Fan Favorite Moments"
+              frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="track-row">
+          <a href="TvShow/friends.jpg" target="newtab">
+            <img
+              src="TvShow/friends.jpg"
+              title="F.R.I.E.N.D.S Series Poster"
+              class="shows-img"
+          /></a>
+          <div class="track-details">
+            <p class="shows-name">F.R.I.E.N.D.S</p>
+            <p class="artist-name">Dir. David Crane | Courteney Cox</p>
+            <p class="synopsis">
+              Revolves around six friends in their 20s and early 30s who live in
+              Manhattan, New York City.
+            </p>
+            <iframe
+              class="video-clip"
+              width="1905"
+              height="790"
+              src="https://www.youtube.com/embed/1kRbLOEICOQ"
+              title="Greatest Moments! | Friends"
+              frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="center-content">
+        <a href="#top" class="go-top-btn">
+          <i class="fa fa-arrow-up"></i>&nbsp;&nbsp; Back to Top
+        </a>
+      </div>
+      <br /><br />
+      <hr />
+      <br />
+      <div class="genre-divider" id="mystery">Mystery</div>
+      <div class="shows-grid">
+        <div class="track-row">
+          <a href="TvShow/Lucifer.jpg" target="newtab">
+            <img
+              src="TvShow/Lucifer.jpg"
+              title="Lucifer Series Poster"
+              class="shows-img"
+          /></a>
+          <div class="track-details">
+            <p class="shows-name">Lucifer</p>
+            <p class="artist-name">Dir. Tom Kapinos | Tom Ellis</p>
+            <p class="synopsis">
+              Lucifer, the devil, abandons Hell to run a nightclub in Los
+              Angeles, subsequently experiencing massive life changes when he
+              becomes a consultant to the LSPD.
+            </p>
+
+            <iframe
+              class="video-clip"
+              width="1905"
+              height="790"
+              src="https://www.youtube.com/embed/ueMwVGBwqRo"
+              title="Lucifer | Final Season Trailer | Netflix"
+              frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="track-row">
+          <a href="TvShow/StrangerThings.jpg" target="newtab">
+            <img
+              src="TvShow/StrangerThings.jpg"
+              title="Stranger Things Season 5 Poster"
+              class="shows-img"
+          /></a>
+          <div class="track-details">
+            <p class="shows-name">Stranger Things</p>
+            <p class="artist-name">The Duffer Brothers | Finn Wolfhard</p>
+            <p class="synopsis">
+              Centers on the residents of the small town of Hawkins, after a
+              young girl with psychokinetic abilities, named Eleven, creates a
+              wormhole the Upside Down.
+            </p>
+
+            <iframe
+              class="video-clip"
+              width="1905"
+              height="790"
+              src="https://www.youtube.com/embed/AfQ13jsLDms"
+              title="Stranger Things 5 | Finale Trailer | Netflix"
+              frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="track-row">
+          <a href="TvShow/ITWelcomeToDerry.jpg" target="newtab">
+            <img
+              src="TvShow/ITWelcomeToDerry.jpg"
+              title="IT: Welcome to Derry Series Poster"
+              class="shows-img"
+          /></a>
+          <div class="track-details">
+            <p class="shows-name">IT: Welcome to Derry</p>
+            <p class="artist-name">Dir. Stephen King | Bill Skarsgård</p>
+            <p class="synopsis">
+              In 1962, a couple with their son move to Derry, Maine just as a
+              young boy disappears. With their arrival, bad things begin to
+              happen in the town.
+            </p>
+
+            <iframe
+              class="video-clip"
+              width="1905"
+              height="790"
+              src="https://www.youtube.com/embed/SEa7ata9wBI"
+              title="IT: Welcome to Derry | Episode 8 Preview | HBO Max"
+              frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="center-content">
+        <a href="#top" class="go-top-btn">
+          <i class="fa fa-arrow-up"></i>&nbsp;&nbsp; Back to Top
+        </a>
+      </div>
+    </div>
+
+    <footer class="footer-custom">
+      <p style="font-size: 16px">Let's work together</p>
+      <div style="font-size: 24px; margin-bottom: 15px">
+        <i
+          class="fa-brands fa-facebook"
+          style="margin: 0 3px; cursor: pointer"
+        ></i>
+        <i
+          class="fa-brands fa-instagram"
+          style="margin: 0 3px; cursor: pointer"
+        ></i>
+        <i
+          class="fa-brands fa-tiktok"
+          style="margin: 0 3px; cursor: pointer"
+        ></i>
+        <i
+          class="fa-brands fa-behance"
+          style="margin: 0 3px; cursor: pointer"
+        ></i>
+      </div>
+      <p style="font-size: 14px">
+        Email:
+        <a href="mailto:mendozalaurence0818@gmail.com" class="content_link"
+          >mendozalaurence0818@gmail.com</a
+        >
+      </p>
+      <p style="font-size: 14px">© 2026 Laurence C. Mendoza</p>
+    </footer>
+  </body>
+</html>

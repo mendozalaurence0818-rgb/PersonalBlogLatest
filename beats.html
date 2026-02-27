@@ -6,117 +6,26 @@
     <title>My Beats | Laurence Mendoza</title>
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Raleway|Playfair+Display|Lato"
+      href="https://fonts.googleapis.com/css?family=Raleway"
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      href="https://fonts.googleapis.com/css?family=Playfair Display"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/png" href="IMAGES/logo.png" />
-
-    <style>
-      .container {
-        max-width: 900px;
-        margin: 80px auto;
-        padding: 0 20px;
-      }
-
-      h1.beats-title {
-        font-family: "Playfair Display", serif;
-        font-size: 26px;
-        letter-spacing: 3px;
-        text-transform: uppercase;
-        text-align: center;
-      }
-
-      .music-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 40px;
-      }
-
-      .track-row {
-        margin-bottom: 50px;
-        text-align: center;
-      }
-
-      .genre-divider {
-        font-family: "Lato", sans-serif;
-        font-size: 24px;
-        text-transform: uppercase;
-        color: #303030;
-        text-align: center;
-        margin-bottom: 20px;
-        padding-bottom: 10px;
-      }
-
-      .album-img {
-        width: 100%;
-        aspect-ratio: 1/1;
-        object-fit: cover;
-        border-radius: 10px;
-        margin-bottom: 10px;
-      }
-
-      .track-name {
-        font-family: "Playfair Display", serif;
-        font-size: 24px;
-        display: block;
-        color: #000;
-        margin-bottom: 5px;
-      }
-
-      .artist-name {
-        font-family: "Lato", sans-serif;
-        font-size: 14px;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        color: #4e0101;
-      }
-
-      audio {
-        width: 100%;
-        height: 30px;
-        margin-top: 15px;
-      }
-
-      .back-nav {
-        text-align: center;
-        margin-top: 80px;
-        font-size: 11px;
-        letter-spacing: 2px;
-      }
-
-      .back-nav a {
-        text-decoration: none;
-        color: #1a1a1a;
-        border-bottom: 1px solid #1a1a1a;
-      }
-
-      .center-content {
-        text-align: center;
-      }
-    </style>
   </head>
 
   <body>
-    <header class="site-header">
-      <div class="header-banner">
-        <h1 class="story_title"><i>Designing My Creative Future</i></h1>
-        <p class="story_subtitle">
-          From Photoshop Experiments to Freelance Deadlines and IT Dreams
-        </p>
-      </div>
-      <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="blog.html">Blogs</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="aboutme.html">About Me</a>
-      </nav>
-    </header>
-
-    <div class="container">
+    <div class="beats-container">
       <div class="center-content" style="padding: 0">
         <a href="aboutme.html" class="go-top-btn">
           <i class="fa fa-arrow-left"></i>&nbsp;&nbsp; Go back to About
@@ -124,7 +33,14 @@
         <br /><br />
       </div>
       <br />
-      <h1 class="beats-title">Album</h1>
+      <h1 class="beats-title">Music Album</h1>
+      <p
+        class="box_subtitle"
+        style="text-align: center; font-size: 15px; margin-top: 5px"
+      >
+        Explore the song that gets me thru the day.
+      </p>
+      <br />
       <div
         class="gallery-nav-bar"
         style="
@@ -137,11 +53,9 @@
         <a href="#r&b" class="filter-btn">R&B</a>
         <a href="#opm" class="filter-btn">OPM</a>
       </div>
-      <br /><br />
       <hr />
-
       <br /><br />
-      <div class="genre-divider" id="r&b">R & B</div>
+      <div class="genre" id="r&b">R & B</div>
       <div class="music-grid">
         <div class="track-row">
           <a
@@ -151,13 +65,17 @@
           >
             <img src="Beats/R&B/Ballads 1.jpg" class="album-img" />
           </a>
-          <div class="track-details">
-            <div class="track-info-group">
-              <span class="track-name">Attention</span>
-              <span class="artist-name">Joji</span>
+          <div class="song-details">
+            <div>
+              <p class="song-name">Attention</p>
+              <p class="artist-name">Joji</p>
             </div>
             <audio controls>
+<<<<<<< HEAD
               <source src="Beats/R&B/Joji - ATTENTION.mp3" type="audio/mpeg" />
+=======
+              <source src="Beats/R&B/Attention.mp3" type="audio/mpeg" />
+>>>>>>> 1afeadd (newly updated and final personal blog changes)
             </audio>
           </div>
         </div>
@@ -170,32 +88,44 @@
           >
             <img src="Beats/R&B/Niki.png" class="album-img" />
           </a>
-          <div class="track-details">
-            <div class="track-info-group">
-              <span class="track-name">Autumn</span>
-              <span class="artist-name">Niki</span>
+          <div class="song-details">
+            <div>
+              <p class="song-name">Autumn</p>
+              <p class="artist-name">Niki</p>
             </div>
             <audio controls>
+<<<<<<< HEAD
               <source
                 src="Beats/R&B/NIKI - Autumn (Official Lyric Video).mp3"
                 type="audio/mpeg"
               />
+=======
+              <source src="Beats/R&B/Autumn.mp3" type="audio/mpeg" />
+>>>>>>> 1afeadd (newly updated and final personal blog changes)
             </audio>
           </div>
         </div>
 
         <div class="track-row">
           <a
+<<<<<<< HEAD
             href="Beats/R&B/Joji_-_Sanctuary.png"
             target="newtab"
             title="Joji 'Sanctuary' Album Picture"
           >
             <img src="Beats/R&B/Joji_-_Sanctuary.png" class="album-img" />
+=======
+            href="Beats/R&B/sanctuary.png"
+            target="newtab"
+            title="Joji 'Sanctuary' Album Picture"
+          >
+            <img src="Beats/R&B/sanctuary.png" class="album-img" />
+>>>>>>> 1afeadd (newly updated and final personal blog changes)
           </a>
-          <div class="track-details">
-            <div class="track-info-group">
-              <span class="track-name">Sanctuary</span>
-              <span class="artist-name">Joji</span>
+          <div class="song-details">
+            <div>
+              <p class="song-name">Sanctuary</p>
+              <p class="artist-name">Joji</p>
             </div>
             <audio controls>
               <source src="Beats/R&B/Sanctuary.mp3" type="audio/mpeg" />
@@ -211,16 +141,20 @@
           >
             <img src="Beats/R&B/starboy.jpg" class="album-img" />
           </a>
-          <div class="track-details">
-            <div class="track-info-group">
-              <span class="track-name">Reminder</span>
-              <span class="artist-name">The Weeknd</span>
+          <div class="song-details">
+            <div>
+              <p class="song-name">Reminder</p>
+              <p class="artist-name">The Weeknd</p>
             </div>
             <audio controls>
+<<<<<<< HEAD
               <source
                 src="Beats/R&B/The Weeknd - Reminder (Official Video).mp3"
                 type="audio/mpeg"
               />
+=======
+              <source src="Beats/R&B/reminder.mp3" type="audio/mpeg" />
+>>>>>>> 1afeadd (newly updated and final personal blog changes)
             </audio>
           </div>
         </div>
@@ -233,16 +167,20 @@
           >
             <img src="Beats/R&B/Fetty-wap-again.jpg" class="album-img" />
           </a>
-          <div class="track-details">
-            <div class="track-info-group">
-              <span class="track-name">Again</span>
-              <span class="artist-name">Fetty Wap</span>
+          <div class="song-details">
+            <div>
+              <p class="song-name">Again</p>
+              <p class="artist-name">Fetty Wap</p>
             </div>
             <audio controls>
+<<<<<<< HEAD
               <source
                 src="Beats/R&B/Fetty Wap - Again [Audio Only].mp3"
                 type="audio/mpeg"
               />
+=======
+              <source src="Beats/R&B/again.mp3" type="audio/mpeg" />
+>>>>>>> 1afeadd (newly updated and final personal blog changes)
             </audio>
           </div>
         </div>
@@ -255,13 +193,17 @@
           >
             <img src="Beats/R&B/KissItBetter.jpg" class="album-img" />
           </a>
-          <div class="track-details">
-            <div class="track-info-group">
-              <span class="track-name">Kiss It Better</span>
-              <span class="artist-name">Rihanna</span>
+          <div class="song-details">
+            <div>
+              <p class="song-name">Kiss It Better</p>
+              <p class="artist-name">Rihanna</p>
             </div>
             <audio controls>
+<<<<<<< HEAD
               <source src="Beats/R&B/Kiss It Better.mp3" type="audio/mpeg" />
+=======
+              <source src="Beats/R&B/kiss it better.mp3" type="audio/mpeg" />
+>>>>>>> 1afeadd (newly updated and final personal blog changes)
             </audio>
           </div>
         </div>
@@ -274,7 +216,7 @@
       <br /><br />
       <hr />
       <br /><br />
-      <div class="genre-divider" id="opm">OPM</div>
+      <div class="genre" id="opm">OPM</div>
       <div class="music-grid">
         <div class="track-row">
           <a
@@ -284,16 +226,20 @@
           >
             <img src="Beats/OPM/Nandito Ako.jpg" class="album-img" />
           </a>
-          <div class="track-details">
-            <div class="track-info-group">
-              <span class="track-name">Nandito Ako</span>
-              <span class="artist-name">Ogie Alcasid</span>
+          <div class="song-details">
+            <div>
+              <p class="song-name">Nandito Ako</p>
+              <p class="artist-name">Ogie Alcasid</p>
             </div>
             <audio controls>
+<<<<<<< HEAD
               <source
                 src="Beats/OPM/Ogie Alcasid - Nandito Ako (Lyrics On Screen).mp3"
                 type="audio/mpeg"
               />
+=======
+              <source src="Beats/OPM/Nandito ako Ogie.mp3" type="audio/mpeg" />
+>>>>>>> 1afeadd (newly updated and final personal blog changes)
             </audio>
           </div>
         </div>
@@ -306,14 +252,18 @@
           >
             <img src="Beats/OPM/Bumalik kana.jpg" class="album-img" />
           </a>
-          <div class="track-details">
-            <div class="track-info-group">
-              <span class="track-name">Bumalik Ka Na Sakin</span>
-              <span class="artist-name">Silent Sanctuary</span>
+          <div class="song-details">
+            <div>
+              <p class="song-name">Bumalik Ka Na Sakin</p>
+              <p class="artist-name">Silent Sanctuary</p>
             </div>
             <audio controls>
               <source
+<<<<<<< HEAD
                 src="Beats/OPM/Silent Sanctuary - Bumalik Ka Na Sakin (Official Lyric Video).mp3"
+=======
+                src="Beats/OPM/Bumalik ka na sakin.mp3"
+>>>>>>> 1afeadd (newly updated and final personal blog changes)
                 type="audio/mpeg"
               />
             </audio>
@@ -328,16 +278,20 @@
           >
             <img src="Beats/OPM/Dito Sa'kin.png" class="album-img" />
           </a>
-          <div class="track-details">
-            <div class="track-info-group">
-              <span class="track-name">Dito Sa'kin</span>
-              <span class="artist-name">Earl Agustin</span>
+          <div class="song-details">
+            <div>
+              <p class="song-name">Dito Sa'kin</p>
+              <p class="artist-name">Earl Agustin</p>
             </div>
             <audio controls>
+<<<<<<< HEAD
               <source
                 src="Beats/OPM/Dito Sa’kin - Earl Agustin (Official Lyric Video).mp3"
                 type="audio/mpeg"
               />
+=======
+              <source src="Beats/OPM/Dito sa'kin.mp3" type="audio/mpeg" />
+>>>>>>> 1afeadd (newly updated and final personal blog changes)
             </audio>
           </div>
         </div>
@@ -349,16 +303,20 @@
           >
             <img src="Beats/OPM/Buko.png" class="album-img" />
           </a>
-          <div class="track-details">
-            <div class="track-info-group">
-              <span class="track-name">Buko</span>
-              <span class="artist-name">Jireh Lim</span>
+          <div class="song-details">
+            <div>
+              <p class="song-name">Buko</p>
+              <p class="artist-name">Jireh Lim</p>
             </div>
             <audio controls>
+<<<<<<< HEAD
               <source
                 src="Beats/OPM/Buko - Jireh Lim Lyrics.mp3"
                 type="audio/mpeg"
               />
+=======
+              <source src="Beats/OPM/Buko Jireh.mp3" type="audio/mpeg" />
+>>>>>>> 1afeadd (newly updated and final personal blog changes)
             </audio>
           </div>
         </div>
@@ -370,16 +328,20 @@
           >
             <img src="Beats/OPM/Unti-Unti.jpg" class="album-img" />
           </a>
-          <div class="track-details">
-            <div class="track-info-group">
-              <span class="track-name">Unti-Unti</span>
-              <span class="artist-name">Up Dharma Down</span>
+          <div class="song-details">
+            <div>
+              <p class="song-name">Unti-Unti</p>
+              <p class="artist-name">Up Dharma Down</p>
             </div>
             <audio controls>
+<<<<<<< HEAD
               <source
                 src="Beats/OPM/UDD-Unti-Unti Lyric Video (Original Song from Globe Studios Valentines Video 2017).mp3"
                 type="audio/mpeg"
               />
+=======
+              <source src="Beats/OPM/Unti-Unti.mp3" type="audio/mpeg" />
+>>>>>>> 1afeadd (newly updated and final personal blog changes)
             </audio>
           </div>
         </div>
@@ -391,16 +353,20 @@
           >
             <img src="Beats/OPM/Take All The Love.jpg" class="album-img" />
           </a>
-          <div class="track-details">
-            <div class="track-info-group">
-              <span class="track-name">Take All The Love</span>
-              <span class="artist-name">Arthur Nery</span>
+          <div class="song-details">
+            <div>
+              <p class="song-name">Take All The Love</p>
+              <p class="artist-name">Arthur Nery</p>
             </div>
             <audio controls>
+<<<<<<< HEAD
               <source
                 src="Beats/OPM/Arthur Nery - TAKE ALL THE LOVE.mp3"
                 type="audio/mpeg"
               />
+=======
+              <source src="Beats/OPM/Take all the love.mp3" type="audio/mpeg" />
+>>>>>>> 1afeadd (newly updated and final personal blog changes)
             </audio>
           </div>
         </div>
@@ -410,6 +376,14 @@
           <i class="fa fa-arrow-up"></i>&nbsp;&nbsp; Back to Top
         </a>
       </div>
+      <br /><br />
+      <p style="font-size: 14px; text-transform: uppercase; text-align: center">
+        <strong>Disclaimer:</strong> <br />
+        <br />
+        I do not own the audio tracks featured on this page. All rights belong
+        to the respective owners and artists. This project is for educational
+        and personal portfolio purposes only.
+      </p>
     </div>
 
     <footer class="footer-custom">

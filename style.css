@@ -58,7 +58,7 @@ header {
 }
 
 .story_title {
-  font-family: "DM Serif Display", serif;
+  font-family: "Playfair Display", serif;
   text-align: center;
   font-size: 70px;
   margin-top: 0;
@@ -185,7 +185,7 @@ video {
 }
 
 .box_title {
-  font-family: "DM Serif Display", serif;
+  font-family: "Playfair Display", serif;
   text-align: center;
   font-size: 34px;
   margin-bottom: 40px;
@@ -332,30 +332,198 @@ video {
   display: block;
 }
 
-.photo-label {
-  padding: 10px;
-  font-size: 11px;
-  color: #666;
-  background-color: rgba(255, 255, 255, 0.5);
-  text-decoration: none;
-}
-
 .photo-link {
-  text-decoration: none; 
+  text-decoration: none;
   display: block;
 }
 
 .filter-btn {
   text-decoration: none;
   color: #4e0101;
-  border: 1px solid #4e0101;
+  border-bottom: 2px solid transparent;
   padding: 8px 20px;
-  border-radius: 20px;
 }
 
 .filter-btn:hover {
-  background-color: #4e0101;
-  color: #fff;
+  border-bottom: 2px solid #4e0101;
+  transition-duration: 0.3s;
+  color: #4e0101;
+}
+
+.center-content {
+  text-align: center;
+}
+
+/*MY BEATS*/
+.beats-container {
+  max-width: 950px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.beats-title {
+  font-family: "Playfair Display", serif;
+  font-size: 26px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.music-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.track-row {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.genre {
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #303030;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.album-img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.song-name {
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+  display: block;
+  color: #000;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.artist-name {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #4e0101;
+  margin-top: 10px;
+}
+
+audio {
+  width: 100%;
+  height: 30px;
+  margin-top: 15px;
+}
+
+/* MY MOVIES */
+.movies-container {
+  max-width: 1100px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.genre-divider {
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #303030;
+  text-align: center;
+  margin: 40px 0 20px;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.track-row {
+  margin-bottom: 50px;
+  padding: 15px;
+}
+
+.movie-img {
+  width: 100%;
+  aspect-ratio: 2/3;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
+
+.movie-name {
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+  display: block;
+  color: #000;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.artist-name {
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #4e0101;
+  margin-bottom: 10px;
+  display: block;
+  text-align: center;
+}
+
+.synopsis {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.5;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  height: 60px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.video-clip {
+  width: 100%;
+  height: 150px;
+  border-radius: 6px;
+  margin-top: 15px;
+}
+
+/* MY SHOWS */
+
+.shows-container {
+  max-width: 1100px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.shows-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.shows-img {
+  width: 100%;
+  aspect-ratio: 2/3;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
+
+.shows-name {
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+  display: block;
+  color: #000;
+  margin-bottom: 5px;
+  text-align: center;
 }
 
 /* GO TOP BUTTON */
@@ -364,7 +532,6 @@ video {
   color: #000;
   font-weight: bold;
   padding: 10px 20px;
-  
 }
 
 .go-top-btn:hover {
